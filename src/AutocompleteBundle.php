@@ -20,7 +20,7 @@ use Symfony\UX\Autocomplete\DependencyInjection\AutocompleteFormTypePass;
  */
 final class AutocompleteBundle extends Bundle
 {
-    private $container;
+    protected $container;
     public function build()
     {
         $this->container = new ContainerBuilder;
