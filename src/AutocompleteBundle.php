@@ -20,11 +20,9 @@ use Symfony\UX\Autocomplete\DependencyInjection\AutocompleteFormTypePass;
  */
 final class AutocompleteBundle extends Bundle
 {
-    protected $container;
-    public function build()
+    public function build(ContainerBuilder $container)
     {
-        $this->container = new ContainerBuilder;
-        $this->container->addCompilerPass(new AutocompleteFormTypePass());
+        $container->addCompilerPass(new AutocompleteFormTypePass());
     }
 
     public function getPath(): string
