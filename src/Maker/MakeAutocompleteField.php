@@ -124,7 +124,7 @@ EOF)
             ParentEntityAutocompleteType::class,
         ]);
 
-      
+
         $variables = new MakerAutocompleteVariables(
           $useStatements,
             $entityClassDetails,
