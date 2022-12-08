@@ -124,10 +124,11 @@ EOF)
             ParentEntityAutocompleteType::class,
         ]);
 
+      
         $variables = new MakerAutocompleteVariables(
-            useStatements: $useStatements,
-            entityClassDetails: $entityClassDetails,
-            repositoryClassDetails: $repositoryClassDetails,
+          $useStatements,
+            $entityClassDetails,
+          $repositoryClassDetails,
         );
         $generator->generateClass(
             $classDetails->getFullName(),
