@@ -18,11 +18,14 @@ use Symfony\Component\String\UnicodeString;
  *
  * @author Ryan Weaver <ryan@symfonycasts.com>
  */
-#[\Attribute(\Attribute::TARGET_CLASS)]
+/**
+ * @Attribute(\Attribute::TARGET_CLASS)
+ */
 class AsEntityAutocompleteField
 {
+    private $alias = null;
     public function __construct(
-        private ?string $alias = null,
+
     ) {
     }
 

@@ -18,8 +18,9 @@ use Symfony\Component\DependencyInjection\ServiceLocator;
  */
 final class AutocompleterRegistry
 {
+    private $autocompletersLocator;
+
     public function __construct(
-        private ServiceLocator $autocompletersLocator
     ) {
     }
 

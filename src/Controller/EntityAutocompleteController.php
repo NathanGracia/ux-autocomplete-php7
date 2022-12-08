@@ -24,10 +24,11 @@ use Symfony\UX\Autocomplete\AutocompleterRegistry;
  */
 final class EntityAutocompleteController
 {
+    private $autocompleteFieldRegistry;
+    private $autocompleteResultsExecutor;
+    private $urlGenerator;
     public function __construct(
-        private AutocompleterRegistry $autocompleteFieldRegistry,
-        private AutocompleteResultsExecutor $autocompleteResultsExecutor,
-        private UrlGeneratorInterface $urlGenerator,
+
     ) {
     }
 

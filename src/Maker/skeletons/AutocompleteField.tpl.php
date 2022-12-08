@@ -13,7 +13,10 @@ namespace <?php echo $namespace; ?>;
 
 <?php echo $variables->useStatements; ?>
 
-#[AsEntityAutocompleteField]
+
+/**
+* @AsEntityAutocompleteField
+*/
 class <?php echo $class_name; ?> extends AbstractType
 {
     public function configureOptions(OptionsResolver $resolver)

@@ -22,8 +22,10 @@ use Symfony\Bridge\Doctrine\ManagerRegistry;
  */
 class DoctrineRegistryWrapper
 {
+    private $registry = null;
+
     public function __construct(
-        private ?ManagerRegistry $registry = null
+
     ) {
     }
 

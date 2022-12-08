@@ -19,8 +19,9 @@ use Doctrine\Persistence\ObjectManager;
  */
 class EntityMetadataFactory
 {
+    private $doctrine;
     public function __construct(
-        private DoctrineRegistryWrapper $doctrine
+
     ) {
     }
 

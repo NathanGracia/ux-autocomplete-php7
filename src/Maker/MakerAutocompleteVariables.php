@@ -19,10 +19,11 @@ use Symfony\Bundle\MakerBundle\Util\UseStatementGenerator;
  */
 class MakerAutocompleteVariables
 {
+    public  $useStatements;
+    public  $entityClassDetails;
+    public  $repositoryClassDetails = null;
     public function __construct(
-        public UseStatementGenerator $useStatements,
-        public ClassNameDetails $entityClassDetails,
-        public ?ClassNameDetails $repositoryClassDetails = null,
+
     ) {
     }
 }

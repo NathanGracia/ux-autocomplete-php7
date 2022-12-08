@@ -20,8 +20,16 @@ use Symfony\Component\Uid\Uuid;
  */
 class EntitySearchUtil
 {
-    public function __construct(private EntityMetadataFactory $metadataFactory)
+    private $metadataFactory;
+    /*
+     *
+     * public function __construct(private EntityMetadataFactory $metadataFactory)
     {
+    }
+     */
+    public function __construct()
+    {
+        $this->metadataFactory = new EntityMetadataFactory();
     }
 
     /**

@@ -13,12 +13,10 @@ namespace Symfony\UX\Autocomplete;
 
 final class AutocompleteResults
 {
-    /**
-     * @param list<array{label: string, value: mixed}> $results
-     */
+    public $results;
+    public $hasNextPage;
     public function __construct(
-        public array $results,
-        public bool $hasNextPage,
+
     ) {
     }
 }

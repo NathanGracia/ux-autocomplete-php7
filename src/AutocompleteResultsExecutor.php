@@ -21,9 +21,10 @@ use Symfony\UX\Autocomplete\Doctrine\DoctrineRegistryWrapper;
  */
 final class AutocompleteResultsExecutor
 {
+    private  $managerRegistry;
+    private $security = null;
     public function __construct(
-        private DoctrineRegistryWrapper $managerRegistry,
-        private ?Security $security = null
+
     ) {
     }
 

@@ -18,8 +18,9 @@ use Doctrine\Persistence\Mapping\ClassMetadata;
  */
 class EntityMetadata
 {
+    private $metadata;
     public function __construct(
-        private ClassMetadata $metadata
+
     ) {
     }
 

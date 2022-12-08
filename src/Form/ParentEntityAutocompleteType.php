@@ -26,8 +26,9 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
  */
 final class ParentEntityAutocompleteType extends AbstractType implements DataMapperInterface
 {
+    private $urlGenerator;
     public function __construct(
-        private UrlGeneratorInterface $urlGenerator
+
     ) {
     }
 

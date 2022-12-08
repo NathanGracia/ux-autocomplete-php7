@@ -35,11 +35,11 @@ use Symfony\UX\Autocomplete\Form\ParentEntityAutocompleteType;
  */
 class MakeAutocompleteField extends AbstractMaker
 {
-    private string $className;
-    private string $entityClass;
+    private $className;
+    private $entityClass;
+    private  $doctrineHelper = null;
 
     public function __construct(
-        private ?DoctrineHelper $doctrineHelper = null
     ) {
     }
 

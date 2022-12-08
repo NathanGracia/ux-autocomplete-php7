@@ -22,15 +22,15 @@ use Symfony\UX\Autocomplete\EntityAutocompleterInterface;
  */
 final class WrappedEntityTypeAutocompleter implements EntityAutocompleterInterface
 {
-    private ?FormInterface $form = null;
-    private ?EntityMetadata $entityMetadata = null;
-
+    private  $form = null;
+    private  $entityMetadata = null;
+    private  $formType;
+    private  $formFactory;
+    private  $metadataFactory;
+    private  $propertyAccessor;
+    private  $entitySearchUtil;
     public function __construct(
-        private string $formType,
-        private FormFactoryInterface $formFactory,
-        private EntityMetadataFactory $metadataFactory,
-        private PropertyAccessorInterface $propertyAccessor,
-        private EntitySearchUtil $entitySearchUtil
+
     ) {
     }
 
