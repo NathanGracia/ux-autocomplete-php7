@@ -27,10 +27,10 @@ use Symfony\Contracts\Translation\TranslatorInterface;
  */
 final class AutocompleteChoiceTypeExtension extends AbstractTypeExtension
 {
-    private $translator = null;
-    public function __construct()
+    private $translator;
+    public function __construct($translator = null)
     {
-        $this->translator = new TranslatorInterface();
+        $this->translator = $translator;
     }
 
     public static function getExtendedTypes(): iterable
